@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-hfsb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-with-depl-tenant/appstudio/dc-metro-map-hfsb@sha256:460dda5d29e1137b3b7fb4c314cd54027d3f170618d6d52f854c17cdaf60f1c7
+        name: my-nodejs
+        resources: {}
+status: {}
